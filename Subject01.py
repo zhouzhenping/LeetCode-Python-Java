@@ -37,7 +37,24 @@ class Solution01:
             t = target - nums[i]
             if t in d.keys():
                 return([d[t], i])
-            d[nums[i]] = i,
+            d[nums[i]] = i
+    
+    def twoSum04(self, nums: 'List[int]', target: int) -> 'List[int]':
+        dic = {}
+        for i in range(len(nums)):
+            dic[target - nums[i]] = i
+        for j in range(len(nums)):
+            if nums[j] in dic and j != dic[nums[j]]:
+                return [j, dic[nums[j]]]
+    
+    def twoSum05(self, nums: 'List[int]', target: int) -> 'List[int]':
+        resultList = []
+        for index, element in enumerate(nums):
+            for y in range(index + 1, len(nums)):
+                if nums[index] + nums[y] == target:
+                    resultList.append(index)
+                    resultList.append(y)
+        return resultList
     
     
 
@@ -53,3 +70,5 @@ solution01 = Solution01()
 #print(solution01.twoSum01(nums, target))
 #print(solution01.twoSum02(nums, target))
 print(solution01.twoSum03(nums, target))
+print(solution01.twoSum04(nums, target))
+print(solution01.twoSum05(nums, target))
