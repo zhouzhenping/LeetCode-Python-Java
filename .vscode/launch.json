@@ -4,14 +4,19 @@
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Subject07Solution",
+            "request": "launch",
+            "mainClass": "Subject07Solution",
+            "projectName": "LeetCode-Python-Java_fb3af82e"
+        },
         {
             "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
         },
-        
         {
             "name": "Python: 当前文件",
             "type": "python",
@@ -19,6 +24,5 @@
             "program": "${file}",
             "console": "integratedTerminal"
         }
-
     ]
 }
