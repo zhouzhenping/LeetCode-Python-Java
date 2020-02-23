@@ -30,4 +30,4 @@ class Solution07(object):
         return ret if ret <= 2 ** 31 - 1 and ret >= -(2 ** 31) else 0
 
 solution07 = Solution07()
-print(solution07.reverse02(123))
+print(solution07.reverse01(123))

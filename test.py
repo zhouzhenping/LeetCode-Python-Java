@@ -1,4 +1,5 @@
 import math
+
 class SolutionTest(object):
     def reverse(self, x):
         ret = 0
