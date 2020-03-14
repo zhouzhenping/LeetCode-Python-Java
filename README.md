@@ -78,6 +78,9 @@ https://leetcode-cn.com/problems/roman-to-integer/
 然后对字符串进行遍历，由于组合只有两种，一种是 1 个字符，一种是 2 个字符，其中 2 个字符优先于 1 个字符
 先判断两个字符的组合在哈希表中是否存在，存在则将值取出加到结果 ans 中，并向后移2个字符。不存在则将判断当前 1 个字符是否存在，存在则将值取出加到结果 ans 中，并向后移 1 个字符
 遍历结束返回结果 ans
+在Python中，None、空列表[]、空字典{}、空元组()、0等一系列代表空和无的对象会被转换成False。除此之外的其它对象都会被转化成True
+None,  False, 空字符串"", 0, 空列表[], 空字典{}, 空元组()都相当于False 
 
 ### 14 最长公共前缀
 https://leetcode-cn.com/problems/longest-common-prefix/
+

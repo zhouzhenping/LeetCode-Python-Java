@@ -2,6 +2,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Subject13Solution {
+    public static void main(String args[]) {
+        Subject13Solution subject13Solution = new Subject13Solution();
+        System.out.println(subject13Solution.romanToInt("IVXC"));
+    }
+
     public int romanToInt(String s) {
         Map<String, Integer> map = new HashMap<>();
         map.put("I", 1);

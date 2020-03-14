@@ -4,8 +4,13 @@
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
-
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Subject13Solution",
+            "request": "launch",
+            "mainClass": "Subject13Solution",
+            "projectName": "LeetCode-Python-Java_fb3af82e"
+        },
         {
             "type": "chrome",
             "request": "attach",
@@ -18,9 +23,8 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome",
-            //"url": "http://192.168.1.105:8080",
             "url": "${workspaceFolder}/index.html",
-            "webRoot": "${workspaceFolder}/index.html" // 指向的位置就是项目中文件位置
+            "webRoot": "${workspaceFolder}/index.html"
         },
         {
             "type": "java",

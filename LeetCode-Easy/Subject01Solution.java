@@ -2,6 +2,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Subject01Solution {
+    public static void main(String args[]) {
+        int[] nums = { 2, 11, 7, 15 };
+        int target = 9;
+        int[] solution = {};
+        solution = twoSum01(nums, target);
+        System.out.println("The target is : " + solution[0] + " and " + solution[1]);
+    }
+
     /**
      * 暴力法：遍历每个元素x, 并查找是否存在一个值与 target-x 相等的目标元素
      * 
@@ -53,13 +61,5 @@ public class Subject01Solution {
             map.put(nums[i], i);
         }
         throw new IllegalArgumentException("No two sum solution");
-    }
-
-    public static void main(String args[]) {
-        int[] nums = { 2, 11, 7, 15 };
-        int target = 9;
-        int[] solution = {};
-        solution = twoSum01(nums, target);
-        System.out.println("The target is : " + solution[0] + " and " + solution[1]);
     }
 }
