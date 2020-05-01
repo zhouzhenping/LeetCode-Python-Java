@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Subject14Solution",
+            "request": "launch",
+            "mainClass": "Subject14Solution",
+            "projectName": "LeetCode-Python-Java_fb3af82e"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Subject13Solution",
             "request": "launch",
             "mainClass": "Subject13Solution",
